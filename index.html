@@ -20,8 +20,8 @@ title: Home
         <div class="column is-7">
           <span class="hero-badge">👋 Welcome to my portfolio</span>
           <h1 class="title is-1">{{ site.author.name }}</h1>
-          <h2 class="subtitle is-3">{{ site.author.title }}</h2>
-          <p class="subtitle is-5" style="max-width: 600px;">{{ site.author.bio }}</p>
+          <h2 class="subtitle is-3" style="font-weight: 600; color: rgba(255,255,255,0.65); letter-spacing: -0.02em;">{{ site.author.title }}</h2>
+          <p class="subtitle is-5" style="max-width: 600px; color: rgba(255,255,255,0.6); font-weight: 400;">{{ site.author.bio }}</p>
           <div class="hero-cta">
             <a href="{{ site.baseurl }}/projects" class="button is-white is-rounded is-medium">
               <span class="icon"><i class="fas fa-code"></i></span>
@@ -38,24 +38,24 @@ title: Home
             </a>
             {% endif %}
           </div>
-          <div style="margin-top: 1.5rem;">
+          <div style="margin-top: 2rem; display: flex; gap: 0.75rem;">
             {% if site.author.github %}
-            <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7); margin-right:1rem; font-size:1.4rem;">
+            <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
               <i class="fab fa-github"></i>
             </a>
             {% endif %}
             {% if site.author.linkedin %}
-            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7); margin-right:1rem; font-size:1.4rem;">
+            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
               <i class="fab fa-linkedin"></i>
             </a>
             {% endif %}
             {% if site.author.twitter %}
-            <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7); margin-right:1rem; font-size:1.4rem;">
+            <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
               <i class="fab fa-twitter"></i>
             </a>
             {% endif %}
             {% if site.author.email %}
-            <a href="mailto:{{ site.author.email }}" style="color:rgba(255,255,255,0.7); font-size:1.4rem;">
+            <a href="mailto:{{ site.author.email }}" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
               <i class="fas fa-envelope"></i>
             </a>
             {% endif %}
