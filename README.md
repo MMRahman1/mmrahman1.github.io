@@ -11,9 +11,9 @@ Live site: **https://mmrahman1.github.io**
 Please provide the following information so all `[PLACEHOLDER]` values can be filled in:
 
 ### 👤 Personal Info
-| Placeholder | Description | Example |
+| Placeholder | Description | Replace with |
 |-------------|-------------|---------|
-| `[YOUR_FULL_NAME]` | Your full name (appears in navbar, hero, footer) | `Jane Doe` |
+| `[YOUR_FULL_NAME]` | Your full name (appears in navbar, hero, footer) | `Md Mahmudur Rahman` |
 | `[YOUR_PROFESSIONAL_TITLE]` | Your job title or role | `Full Stack Developer` |
 | `[YOUR_TAGLINE]` | A one-line summary for SEO/meta description | `Building elegant web applications` |
 | `[YOUR_SHORT_BIO]` | 1–2 sentence bio for hero section | `I'm a software engineer...` |
