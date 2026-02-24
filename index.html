@@ -38,24 +38,24 @@ title: Home
             </a>
             {% endif %}
           </div>
-          <div style="margin-top: 2rem; display: flex; gap: 0.75rem;">
+          <div class="hero-social-links">
             {% if site.author.github %}
-            <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+            <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" class="hero-social-link">
               <i class="fab fa-github"></i>
             </a>
             {% endif %}
             {% if site.author.linkedin %}
-            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" class="hero-social-link">
               <i class="fab fa-linkedin"></i>
             </a>
             {% endif %}
             {% if site.author.twitter %}
-            <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+            <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" class="hero-social-link">
               <i class="fab fa-twitter"></i>
             </a>
             {% endif %}
             {% if site.author.email %}
-            <a href="mailto:{{ site.author.email }}" style="width:40px;height:40px;border-radius:0.625rem;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.8);font-size:1.1rem;transition:background 0.2s;" onmouseover="this.style.background='rgba(108,99,255,0.5)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+            <a href="mailto:{{ site.author.email }}" class="hero-social-link">
               <i class="fas fa-envelope"></i>
             </a>
             {% endif %}
