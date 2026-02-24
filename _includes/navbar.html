@@ -1,0 +1,36 @@
+<nav class="navbar is-fixed-top portfolio-navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item navbar-logo" href="{{ site.baseurl }}/">
+        <strong>{{ site.author.name }}</strong>
+      </a>
+      <a role="button" class="navbar-burger" data-target="navbarMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item {% if page.url == '/' %}is-active{% endif %}" href="{{ site.baseurl }}/">
+          Home
+        </a>
+        <a class="navbar-item {% if page.url contains '/about' %}is-active{% endif %}" href="{{ site.baseurl }}/about">
+          About
+        </a>
+        <a class="navbar-item {% if page.url contains '/projects' %}is-active{% endif %}" href="{{ site.baseurl }}/projects">
+          Projects
+        </a>
+        <a class="navbar-item {% if page.url contains '/blog' %}is-active{% endif %}" href="{{ site.baseurl }}/blog">
+          Blog
+        </a>
+        <div class="navbar-item">
+          <a class="button is-primary is-rounded" href="{{ site.baseurl }}/#contact">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

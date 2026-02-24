@@ -1,0 +1,46 @@
+<footer class="footer portfolio-footer">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column has-text-centered-mobile">
+        <p class="footer-name">{{ site.author.name }}</p>
+        <p class="footer-title">{{ site.author.title }}</p>
+      </div>
+      <div class="column has-text-centered">
+        <div class="footer-social">
+          {% if site.author.github %}
+          <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social-link">
+            <span class="icon is-large"><i class="fab fa-github fa-lg"></i></span>
+          </a>
+          {% endif %}
+          {% if site.author.linkedin %}
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
+            <span class="icon is-large"><i class="fab fa-linkedin fa-lg"></i></span>
+          </a>
+          {% endif %}
+          {% if site.author.twitter %}
+          <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" aria-label="Twitter" class="footer-social-link">
+            <span class="icon is-large"><i class="fab fa-twitter fa-lg"></i></span>
+          </a>
+          {% endif %}
+          {% if site.author.email %}
+          <a href="mailto:{{ site.author.email }}" aria-label="Email" class="footer-social-link">
+            <span class="icon is-large"><i class="fas fa-envelope fa-lg"></i></span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="column has-text-right has-text-centered-mobile">
+        <p class="footer-copy">&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
+        <p>
+          <a href="{{ site.baseurl }}/">Home</a>
+          <span class="footer-dot">·</span>
+          <a href="{{ site.baseurl }}/about">About</a>
+          <span class="footer-dot">·</span>
+          <a href="{{ site.baseurl }}/projects">Projects</a>
+          <span class="footer-dot">·</span>
+          <a href="{{ site.baseurl }}/blog">Blog</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

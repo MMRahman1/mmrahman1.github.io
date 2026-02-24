@@ -1,0 +1,356 @@
+---
+layout: default
+title: Home
+---
+
+<!-- ===================== HERO ===================== -->
+<section class="portfolio-hero hero is-fullheight-with-navbar">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered is-centered">
+        <div class="column is-3 has-text-centered">
+          <!-- Replace /assets/images/avatar.jpg with your own photo -->
+          <div class="hero-avatar-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+          <!-- Uncomment when you add your photo:
+          <img class="hero-avatar" src="{{ site.baseurl }}/assets/images/avatar.jpg" alt="{{ site.author.name }}" />
+          -->
+        </div>
+        <div class="column is-7">
+          <span class="hero-badge">👋 Welcome to my portfolio</span>
+          <h1 class="title is-1">{{ site.author.name }}</h1>
+          <h2 class="subtitle is-3">{{ site.author.title }}</h2>
+          <p class="subtitle is-5" style="max-width: 600px;">{{ site.author.bio }}</p>
+          <div class="hero-cta">
+            <a href="{{ site.baseurl }}/projects" class="button is-white is-rounded is-medium">
+              <span class="icon"><i class="fas fa-code"></i></span>
+              <span>View Projects</span>
+            </a>
+            <a href="{{ site.baseurl }}/blog" class="button is-outlined is-white is-rounded is-medium">
+              <span class="icon"><i class="fas fa-pen"></i></span>
+              <span>Read Blog</span>
+            </a>
+            {% if site.author.resume %}
+            <a href="{{ site.author.resume }}" class="button is-outlined is-white is-rounded is-medium" target="_blank" rel="noopener">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>Resume</span>
+            </a>
+            {% endif %}
+          </div>
+          <div style="margin-top: 1.5rem;">
+            {% if site.author.github %}
+            <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7); margin-right:1rem; font-size:1.4rem;">
+              <i class="fab fa-github"></i>
+            </a>
+            {% endif %}
+            {% if site.author.linkedin %}
+            <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7); margin-right:1rem; font-size:1.4rem;">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            {% endif %}
+            {% if site.author.twitter %}
+            <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7); margin-right:1rem; font-size:1.4rem;">
+              <i class="fab fa-twitter"></i>
+            </a>
+            {% endif %}
+            {% if site.author.email %}
+            <a href="mailto:{{ site.author.email }}" style="color:rgba(255,255,255,0.7); font-size:1.4rem;">
+              <i class="fas fa-envelope"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section is-medium bg-blue-50" id="about">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-5 has-text-centered">
+        <!-- Replace with your own photo or keep the placeholder -->
+        <div class="about-photo-placeholder">
+          <i class="fas fa-camera" style="font-size: 2.5rem; margin-bottom: 0.5rem;"></i>
+          <p style="font-size: 0.9rem;">[YOUR_PHOTO_HERE]</p>
+        </div>
+        <!-- Uncomment when you add your photo:
+        <img class="about-photo" src="{{ site.baseurl }}/assets/images/about.jpg" alt="{{ site.author.name }}" />
+        -->
+      </div>
+      <div class="column is-7">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-title-line"></div>
+        <div class="content is-medium">
+          <p>{{ site.author.bio }}</p>
+          <p>[YOUR_EXTENDED_BIO — Add 2-3 more paragraphs about your background, interests, and what drives you as a developer/professional.]</p>
+          <p>When I'm not coding, I enjoy [YOUR_HOBBIES_AND_INTERESTS].</p>
+        </div>
+        <div class="buttons" style="margin-top: 1.5rem;">
+          <a href="{{ site.baseurl }}/about" class="button is-primary is-rounded">
+            <span>Read More</span>
+            <span class="icon"><i class="fas fa-arrow-right"></i></span>
+          </a>
+          {% if site.author.resume %}
+          <a href="{{ site.author.resume }}" class="button is-outlined is-rounded" target="_blank" rel="noopener">
+            <span class="icon"><i class="fas fa-download"></i></span>
+            <span>Download CV</span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section is-medium" id="skills">
+  <div class="container">
+    <div class="has-text-centered" style="margin-bottom: 2.5rem;">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="section-title-line" style="margin: 0.5rem auto 0;"></div>
+    </div>
+
+    <!-- Replace the items below with your actual skills -->
+    <div class="columns is-multiline">
+      <div class="column is-12">
+        <p class="has-text-weight-semibold" style="margin-bottom: 0.75rem; color: var(--text-light);">LANGUAGES</p>
+        <div>
+          <span class="skill-tag"><i class="fas fa-code"></i> [LANGUAGE_1]</span>
+          <span class="skill-tag"><i class="fas fa-code"></i> [LANGUAGE_2]</span>
+          <span class="skill-tag"><i class="fas fa-code"></i> [LANGUAGE_3]</span>
+          <span class="skill-tag"><i class="fas fa-code"></i> [LANGUAGE_4]</span>
+        </div>
+      </div>
+      <div class="column is-12">
+        <p class="has-text-weight-semibold" style="margin-bottom: 0.75rem; color: var(--text-light);">FRAMEWORKS & LIBRARIES</p>
+        <div>
+          <span class="skill-tag"><i class="fas fa-layer-group"></i> [FRAMEWORK_1]</span>
+          <span class="skill-tag"><i class="fas fa-layer-group"></i> [FRAMEWORK_2]</span>
+          <span class="skill-tag"><i class="fas fa-layer-group"></i> [FRAMEWORK_3]</span>
+        </div>
+      </div>
+      <div class="column is-12">
+        <p class="has-text-weight-semibold" style="margin-bottom: 0.75rem; color: var(--text-light);">TOOLS & PLATFORMS</p>
+        <div>
+          <span class="skill-tag"><i class="fas fa-tools"></i> [TOOL_1]</span>
+          <span class="skill-tag"><i class="fas fa-tools"></i> [TOOL_2]</span>
+          <span class="skill-tag"><i class="fas fa-tools"></i> [TOOL_3]</span>
+          <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURED PROJECTS ===================== -->
+<section class="section is-medium bg-blue-500" id="projects">
+  <div class="container">
+    <div class="columns is-vcentered" style="margin-bottom: 2.5rem;">
+      <div class="column">
+        <h2 class="section-title" style="color: #fff;">Featured Projects</h2>
+        <div class="section-title-line" style="background: rgba(255,255,255,0.6);"></div>
+      </div>
+      <div class="column is-narrow">
+        <a href="{{ site.baseurl }}/projects" class="view-all-link" style="color: rgba(255,255,255,0.85);">
+          View all projects <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="columns is-multiline">
+      {% assign featured = site.projects | where: "featured", true | limit: 3 %}
+      {% if featured.size > 0 %}
+        {% for project in featured %}
+        <div class="column is-4">
+          <div class="card project-card">
+            {% if project.image %}
+            <div class="card-image">
+              <figure class="image">
+                <img src="{{ project.image | prepend: site.baseurl }}" alt="{{ project.title }}">
+              </figure>
+            </div>
+            {% else %}
+            <div class="project-card-placeholder-img">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            {% endif %}
+            <div class="card-content">
+              <h3 class="title is-5">{{ project.title }}</h3>
+              <p class="post-excerpt">{{ project.description }}</p>
+              <div style="margin-top: 0.75rem;">
+                {% for tech in project.tech %}
+                <span class="tech-tag">{{ tech }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <footer class="card-footer">
+              {% if project.github %}
+              <a href="{{ project.github }}" class="card-footer-item" target="_blank" rel="noopener">
+                <span class="icon"><i class="fab fa-github"></i></span> GitHub
+              </a>
+              {% endif %}
+              <a href="{{ project.url | prepend: site.baseurl }}" class="card-footer-item">
+                Details <span class="icon"><i class="fas fa-arrow-right"></i></span>
+              </a>
+            </footer>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <!-- Placeholder project cards — replace with real _projects/ files -->
+        {% for i in (1..3) %}
+        <div class="column is-4">
+          <div class="card project-card">
+            <div class="project-card-placeholder-img">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="title is-5">[PROJECT_{{ i }}_TITLE]</h3>
+              <p class="post-excerpt">[PROJECT_{{ i }}_DESCRIPTION — A brief description of what this project does and the problem it solves.]</p>
+              <div style="margin-top: 0.75rem;">
+                <span class="tech-tag">[TECH_1]</span>
+                <span class="tech-tag">[TECH_2]</span>
+                <span class="tech-tag">[TECH_3]</span>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <span class="card-footer-item" style="color: rgba(0,0,0,0.3);">
+                <span class="icon"><i class="fab fa-github"></i></span> GitHub
+              </span>
+              <span class="card-footer-item" style="color: rgba(0,0,0,0.3);">
+                Details <span class="icon"><i class="fas fa-arrow-right"></i></span>
+              </span>
+            </footer>
+          </div>
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BLOG POSTS ===================== -->
+<section class="section is-medium bg-blue-50" id="blog">
+  <div class="container">
+    <div class="columns is-vcentered" style="margin-bottom: 2.5rem;">
+      <div class="column">
+        <h2 class="section-title">Latest Posts</h2>
+        <div class="section-title-line"></div>
+      </div>
+      <div class="column is-narrow">
+        <a href="{{ site.baseurl }}/blog" class="view-all-link">
+          View all posts <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="columns is-multiline">
+      {% assign recent_posts = site.posts | limit: 3 %}
+      {% if recent_posts.size > 0 %}
+        {% for post in recent_posts %}
+        <div class="column is-4">
+          <div class="card post-card">
+            <div class="card-content">
+              <p class="post-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+                {% if post.categories %}
+                  &middot;
+                  {% for category in post.categories limit: 1 %}
+                  <span class="tag is-light is-small">{{ category }}</span>
+                  {% endfor %}
+                {% endif %}
+              </p>
+              <h3 class="title is-5">
+                <a href="{{ post.url | prepend: site.baseurl }}" style="color: var(--dark);">{{ post.title }}</a>
+              </h3>
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+              <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">
+                Read more <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <!-- Placeholder blog cards — add real posts in _posts/ -->
+        {% for i in (1..3) %}
+        <div class="column is-4">
+          <div class="card post-card">
+            <div class="card-content">
+              <p class="post-meta">[DATE] &middot; <span class="tag is-light is-small">[CATEGORY]</span></p>
+              <h3 class="title is-5">[POST_{{ i }}_TITLE]</h3>
+              <p class="post-excerpt">[POST_{{ i }}_EXCERPT — A short preview of what this blog post is about.]</p>
+              <span class="read-more" style="opacity: 0.4;">Read more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section is-medium" id="contact">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8 has-text-centered" style="margin-bottom: 2.5rem;">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-title-line" style="margin: 0.5rem auto 0;"></div>
+        <p class="is-size-5" style="margin-top: 1rem; color: var(--text-light);">
+          [YOUR_CONTACT_INTRO — e.g., "I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is always open!"]
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-5">
+        {% if site.author.email %}
+        <a href="mailto:{{ site.author.email }}" class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <p class="has-text-weight-semibold">Email</p>
+            <p style="color: var(--text-light);">{{ site.author.email }}</p>
+          </div>
+        </a>
+        {% endif %}
+        {% if site.author.github %}
+        <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <p class="has-text-weight-semibold">GitHub</p>
+            <p style="color: var(--text-light);">github.com/{{ site.author.github }}</p>
+          </div>
+        </a>
+        {% endif %}
+        {% if site.author.linkedin %}
+        <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div>
+            <p class="has-text-weight-semibold">LinkedIn</p>
+            <p style="color: var(--text-light);">linkedin.com/in/{{ site.author.linkedin }}</p>
+          </div>
+        </a>
+        {% endif %}
+        {% if site.author.twitter %}
+        <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon"><i class="fab fa-twitter"></i></div>
+          <div>
+            <p class="has-text-weight-semibold">Twitter / X</p>
+            <p style="color: var(--text-light);">@{{ site.author.twitter }}</p>
+          </div>
+        </a>
+        {% endif %}
+      </div>
+      <div class="column is-5 is-hidden-touch" style="display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; color: var(--primary);">
+          <i class="fas fa-paper-plane" style="font-size: 6rem; opacity: 0.15;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

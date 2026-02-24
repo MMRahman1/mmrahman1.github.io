@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<section class="hero is-primary is-medium post-hero">
+  <div class="hero-body">
+    <div class="container">
+      <p class="post-category">
+        {% if page.categories %}
+          {% for category in page.categories %}
+            <span class="tag is-light is-medium">{{ category }}</span>
+          {% endfor %}
+        {% endif %}
+      </p>
+      <h1 class="title is-2">{{ page.title }}</h1>
+      <p class="subtitle">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {% if page.author %} &middot; {{ page.author }}{% endif %}
+        {% if page.read_time %} &middot; {{ page.read_time }} min read{% endif %}
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content is-medium post-content">
+          {{ content }}
+        </div>
+
+        <hr>
+
+        <div class="post-navigation columns">
+          <div class="column">
+            {% if page.previous.url %}
+            <a href="{{ page.previous.url | prepend: site.baseurl }}" class="button is-light">
+              <span class="icon"><i class="fas fa-arrow-left"></i></span>
+              <span>{{ page.previous.title }}</span>
+            </a>
+            {% endif %}
+          </div>
+          <div class="column has-text-right">
+            {% if page.next.url %}
+            <a href="{{ page.next.url | prepend: site.baseurl }}" class="button is-light">
+              <span>{{ page.next.title }}</span>
+              <span class="icon"><i class="fas fa-arrow-right"></i></span>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="has-text-centered" style="margin-top: 2rem;">
+          <a href="{{ site.baseurl }}/blog" class="button is-primary is-rounded">
+            <span class="icon"><i class="fas fa-arrow-left"></i></span>
+            <span>Back to Blog</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
