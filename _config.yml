@@ -1,20 +1,19 @@
-# Site settings — replace all [PLACEHOLDER] values with your own information
-title: "[YOUR_FULL_NAME]"
-description: "[YOUR_TAGLINE] — [YOUR_PROFESSIONAL_TITLE]"
+# Site settings
+title: "Md Mahmudur Rahman | Data Scientist"
+description: "Data Science student with practical experience in data analytics, machine learning, and data visualization."
 url: "https://mmrahman1.github.io"
 baseurl: ""
 
 # Author info
 author:
-  name: "[YOUR_FULL_NAME]"
-  title: "[YOUR_PROFESSIONAL_TITLE]"
-  bio: "[YOUR_SHORT_BIO — 1-2 sentences describing what you do and what you're passionate about]"
+  name: "Md Mahmudur Rahman"
+  title: "Data Scientist"
+  bio: "A highly motivated Data Science student with practical experience in data analytics, statistical analysis, machine learning, and data visualization. Passionate about leveraging data to solve complex business challenges."
   avatar: "/assets/images/avatar.jpg"
-  email: "[YOUR_EMAIL]"
+  email: "mmrahman1@hotmail.co.uk"
   github: "mmrahman1"
-  twitter: "[YOUR_TWITTER_HANDLE]"
-  linkedin: "[YOUR_LINKEDIN_USERNAME]"
-  resume: "[YOUR_RESUME_PDF_URL]"
+  linkedin: "mmrahman1"
+  resume: "/assets/MdMRahman_CV.pdf"
 
 # Navigation
 nav_links:
