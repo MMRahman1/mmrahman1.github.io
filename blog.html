@@ -1,0 +1,69 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<section class="hero is-medium is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2">Blog</h1>
+      <p class="subtitle">Thoughts, tutorials, and tech explorations</p>
+    </div>
+  </div>
+</section>
+
+<section class="section is-medium">
+  <div class="container">
+
+    {% if site.posts.size > 0 %}
+    <div class="columns is-multiline">
+      {% for post in site.posts %}
+      <div class="column is-4">
+        <div class="card post-card">
+          <div class="card-content">
+            <p class="post-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+              {% if post.categories %}
+                {% for category in post.categories limit: 2 %}
+                &middot; <span class="tag is-light is-small">{{ category }}</span>
+                {% endfor %}
+              {% endif %}
+            </p>
+            <h2 class="title is-5">
+              <a href="{{ post.url | prepend: site.baseurl }}" style="color: var(--dark);">{{ post.title }}</a>
+            </h2>
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">
+              Read more <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% else %}
+    <!-- Placeholder content — add your blog posts in _posts/ directory -->
+    <div class="notification is-info is-light" style="margin-bottom: 2rem;">
+      <p><strong>How to add blog posts:</strong> Create <code>.md</code> files in the <code>_posts/</code> directory following the naming convention <code>YYYY-MM-DD-post-title.md</code>.</p>
+    </div>
+
+    <div class="columns is-multiline">
+      {% for i in (1..6) %}
+      <div class="column is-4">
+        <div class="card post-card">
+          <div class="card-content">
+            <p class="post-meta">[YYYY-MM-DD] &middot; <span class="tag is-light is-small">[CATEGORY]</span></p>
+            <h2 class="title is-5">[POST_{{ i }}_TITLE]</h2>
+            <p class="post-excerpt">[POST_{{ i }}_EXCERPT — A short preview sentence that describes what this post is about.]</p>
+            <span class="read-more" style="opacity: 0.4;">Read more <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</section>

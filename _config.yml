@@ -1,0 +1,65 @@
+# Site settings — replace all [PLACEHOLDER] values with your own information
+title: "[YOUR_FULL_NAME]"
+description: "[YOUR_TAGLINE] — [YOUR_PROFESSIONAL_TITLE]"
+url: "https://mmrahman1.github.io"
+baseurl: ""
+
+# Author info
+author:
+  name: "[YOUR_FULL_NAME]"
+  title: "[YOUR_PROFESSIONAL_TITLE]"
+  bio: "[YOUR_SHORT_BIO — 1-2 sentences describing what you do and what you're passionate about]"
+  avatar: "/assets/images/avatar.jpg"
+  email: "[YOUR_EMAIL]"
+  github: "mmrahman1"
+  twitter: "[YOUR_TWITTER_HANDLE]"
+  linkedin: "[YOUR_LINKEDIN_USERNAME]"
+  resume: "[YOUR_RESUME_PDF_URL]"
+
+# Navigation
+nav_links:
+  - title: About
+    url: /about
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+  - title: Contact
+    url: /#contact
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+sass:
+  style: compact
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - project-name.md
